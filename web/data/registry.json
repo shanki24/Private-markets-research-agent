@@ -1,0 +1,232 @@
+{
+ "models": [
+  {
+   "version_id": "offline-extractive-v1",
+   "kind": "base",
+   "base": "claude-sonnet-5-5",
+   "params": {
+    "provider": "offline"
+   },
+   "artifact_uri": "",
+   "created_at": "2026-11-25T07:05:57.858105+00:00"
+  }
+ ],
+ "runs": [
+  {
+   "run_id": "f24cc43555",
+   "version_id": "offline-extractive-v1",
+   "suite": "retrieval",
+   "dataset_hash": "4ee29c1eb443",
+   "config": {
+    "retriever": "bm25"
+   },
+   "metrics": {
+    "k": 5,
+    "recall@5": 1.0,
+    "mrr": 0.9555555555555556,
+    "ndcg@5": 0.9531290736324158,
+    "hit@1": 0.9333333333333333,
+    "latency_ms_p50": 0.02880300002061631,
+    "latency_ms_p95": 0.11997199999314034
+   },
+   "git_sha": "nogit",
+   "created_at": "2026-11-25T07:05:58.689087+00:00"
+  },
+  {
+   "run_id": "1250339773",
+   "version_id": "offline-extractive-v1",
+   "suite": "retrieval",
+   "dataset_hash": "4ee29c1eb443",
+   "config": {
+    "retriever": "bm25 +fund-routing"
+   },
+   "metrics": {
+    "k": 5,
+    "recall@5": 1.0,
+    "mrr": 0.9555555555555556,
+    "ndcg@5": 0.9666666666666667,
+    "hit@1": 0.9333333333333333,
+    "latency_ms_p50": 0.10580099996104764,
+    "latency_ms_p95": 0.15003499999011183
+   },
+   "git_sha": "nogit",
+   "created_at": "2026-11-25T07:05:58.691915+00:00"
+  },
+  {
+   "run_id": "2c887f6a18",
+   "version_id": "offline-extractive-v1",
+   "suite": "retrieval",
+   "dataset_hash": "4ee29c1eb443",
+   "config": {
+    "retriever": "dense:tfidf-lsa"
+   },
+   "metrics": {
+    "k": 5,
+    "recall@5": 0.9666666666666667,
+    "mrr": 0.7944444444444444,
+    "ndcg@5": 0.8250848356833507,
+    "hit@1": 0.6666666666666666,
+    "latency_ms_p50": 0.5260080000084599,
+    "latency_ms_p95": 0.8137460000057217
+   },
+   "git_sha": "nogit",
+   "created_at": "2026-11-25T07:05:58.694229+00:00"
+  },
+  {
+   "run_id": "b9ea240b8f",
+   "version_id": "offline-extractive-v1",
+   "suite": "retrieval",
+   "dataset_hash": "4ee29c1eb443",
+   "config": {
+    "retriever": "dense:tfidf-lsa +fund-routing"
+   },
+   "metrics": {
+    "k": 5,
+    "recall@5": 0.9333333333333333,
+    "mrr": 0.7444444444444445,
+    "ndcg@5": 0.7970190607173457,
+    "hit@1": 0.6,
+    "latency_ms_p50": 0.5839740000510574,
+    "latency_ms_p95": 1.081191000025683
+   },
+   "git_sha": "nogit",
+   "created_at": "2026-11-25T07:05:58.696735+00:00"
+  },
+  {
+   "run_id": "cd7f9e851b",
+   "version_id": "offline-extractive-v1",
+   "suite": "retrieval",
+   "dataset_hash": "4ee29c1eb443",
+   "config": {
+    "retriever": "hybrid(bm25+dense:tfidf-lsa,rrf)"
+   },
+   "metrics": {
+    "k": 5,
+    "recall@5": 1.0,
+    "mrr": 0.8555555555555555,
+    "ndcg@5": 0.8842083561656535,
+    "hit@1": 0.7333333333333333,
+    "latency_ms_p50": 0.5741820000366715,
+    "latency_ms_p95": 0.7834080000179711
+   },
+   "git_sha": "nogit",
+   "created_at": "2026-11-25T07:05:58.699096+00:00"
+  },
+  {
+   "run_id": "88fad56140",
+   "version_id": "offline-extractive-v1",
+   "suite": "retrieval",
+   "dataset_hash": "4ee29c1eb443",
+   "config": {
+    "retriever": "hybrid(bm25+dense:tfidf-lsa,rrf) +fund-routing"
+   },
+   "metrics": {
+    "k": 5,
+    "recall@5": 1.0,
+    "mrr": 0.8444444444444444,
+    "ndcg@5": 0.8888334150732157,
+    "hit@1": 0.7333333333333333,
+    "latency_ms_p50": 0.7217169999762518,
+    "latency_ms_p95": 1.2854159999733383
+   },
+   "git_sha": "nogit",
+   "created_at": "2026-11-25T07:05:58.701349+00:00"
+  },
+  {
+   "run_id": "607a8b4b18",
+   "version_id": "offline-extractive-v1",
+   "suite": "answers:rag",
+   "dataset_hash": "4ee29c1eb443",
+   "config": {
+    "agent": "rag",
+    "retriever": "hybrid"
+   },
+   "metrics": {
+    "n": 15,
+    "accuracy": 0.9333333333333333,
+    "accuracy_compare": 0.5,
+    "accuracy_lookup": 1,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "latency_s_p50": 0.0008862770000064302,
+    "latency_s_p95": 0.0013823790000060399,
+    "tokens_in_avg": 525.6,
+    "tokens_out_avg": 29.866666666666667,
+    "llm_calls_avg": 1,
+    "cost_usd_per_query": 0.0
+   },
+   "git_sha": "nogit",
+   "created_at": "2026-11-25T07:05:58.703681+00:00"
+  },
+  {
+   "run_id": "93b6e074ff",
+   "version_id": "offline-extractive-v1",
+   "suite": "answers:planner",
+   "dataset_hash": "4ee29c1eb443",
+   "config": {
+    "agent": "planner",
+    "retriever": "hybrid"
+   },
+   "metrics": {
+    "n": 15,
+    "accuracy": 1,
+    "accuracy_compare": 1,
+    "accuracy_lookup": 1,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "latency_s_p50": 0.0008603309999557496,
+    "latency_s_p95": 0.0016155170000047292,
+    "tokens_in_avg": 404.2,
+    "tokens_out_avg": 78.73333333333333,
+    "llm_calls_avg": 1.1333333333333333,
+    "cost_usd_per_query": 0.0
+   },
+   "git_sha": "nogit",
+   "created_at": "2026-11-25T07:05:58.705991+00:00"
+  },
+  {
+   "run_id": "0c98454842",
+   "version_id": "offline-extractive-v1",
+   "suite": "answers:refine",
+   "dataset_hash": "4ee29c1eb443",
+   "config": {
+    "agent": "refine",
+    "retriever": "hybrid"
+   },
+   "metrics": {
+    "n": 15,
+    "accuracy": 0.9333333333333333,
+    "accuracy_compare": 0.5,
+    "accuracy_lookup": 1,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "latency_s_p50": 0.0009309740000276179,
+    "latency_s_p95": 0.0016333419999909893,
+    "tokens_in_avg": 525.6,
+    "tokens_out_avg": 29.866666666666667,
+    "llm_calls_avg": 1,
+    "cost_usd_per_query": 0.0
+   },
+   "git_sha": "nogit",
+   "created_at": "2026-11-25T07:05:58.708224+00:00"
+  },
+  {
+   "run_id": "052fba0fa9",
+   "version_id": "offline-extractive-v1",
+   "suite": "extraction",
+   "dataset_hash": "30f74aca2ae9",
+   "config": {
+    "task": "fund_metrics"
+   },
+   "metrics": {
+    "field_accuracy": 1.0,
+    "docs": 5,
+    "latency_s_total": 0.0005447820000199499,
+    "cost_usd_total": 0.0
+   },
+   "git_sha": "nogit",
+   "created_at": "2026-11-25T07:05:58.710507+00:00"
+  }
+ ],
+ "qlora_comparison": null
+}

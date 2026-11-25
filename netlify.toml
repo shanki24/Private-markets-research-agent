@@ -1,0 +1,14 @@
+[build]
+  publish = "web"
+  functions = "netlify/functions"
+  # Data in web/data and netlify/functions/lib/index-data.mjs is pre-built by
+  # `python -m pmra.cli export` and committed, so Netlify needs no Python build.
+  command = "echo 'static site + functions, no build step'"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"

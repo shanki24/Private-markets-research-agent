@@ -1,0 +1,13 @@
+{
+  "name": "private-markets-research-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "RAG + agents over private-market fund reports, deployable on Netlify",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "local": "node scripts/local-server.mjs",
+    "dev": "netlify dev",
+    "test:functions": "node scripts/test-functions.mjs"
+  }
+}

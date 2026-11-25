@@ -1,0 +1,372 @@
+[
+ {
+  "doc_id": "ashgrove-sec-v-q2-2026",
+  "fund_name": "Ashgrove Secondaries Fund V",
+  "strategy": "Secondaries",
+  "vintage": 2023,
+  "as_of": "2026-06-30",
+  "currency": "USD",
+  "commitments_m": {
+   "value": 3100.0,
+   "unit": "m",
+   "evidence_chunk": "ashgrove-sec-v-q2-2026#c0",
+   "evidence_text": "total commitments of $3.1 billion"
+  },
+  "called_m": {
+   "value": 1940.0,
+   "unit": "m",
+   "evidence_chunk": "ashgrove-sec-v-q2-2026#c0",
+   "evidence_text": "called capital was $1.94 billion"
+  },
+  "nav_m": {
+   "value": 2110.0,
+   "unit": "m",
+   "evidence_chunk": "ashgrove-sec-v-q2-2026#c1",
+   "evidence_text": "Net asset value was $2.11 billion"
+  },
+  "net_irr_pct": {
+   "value": 21.7,
+   "unit": "%",
+   "evidence_chunk": "ashgrove-sec-v-q2-2026#c1",
+   "evidence_text": "net IRR of 21.7%"
+  },
+  "gross_irr_pct": {
+   "value": null,
+   "unit": null,
+   "evidence_chunk": null,
+   "evidence_text": null
+  },
+  "tvpi_x": {
+   "value": 1.38,
+   "unit": "x",
+   "evidence_chunk": "ashgrove-sec-v-q2-2026#c1",
+   "evidence_text": "TVPI was 1.38x"
+  },
+  "dpi_x": {
+   "value": 0.29,
+   "unit": "x",
+   "evidence_chunk": "ashgrove-sec-v-q2-2026#c1",
+   "evidence_text": "DPI was 0.29x"
+  },
+  "rvpi_x": {
+   "value": 1.09,
+   "unit": "x",
+   "evidence_chunk": "ashgrove-sec-v-q2-2026#c1",
+   "evidence_text": "RVPI was 1.09x"
+  },
+  "mgmt_fee_pct": {
+   "value": 1.0,
+   "unit": "%",
+   "evidence_chunk": "ashgrove-sec-v-q2-2026#c4",
+   "evidence_text": "management fee is 1.0%"
+  },
+  "carry_pct": {
+   "value": 12.5,
+   "unit": "%",
+   "evidence_chunk": "ashgrove-sec-v-q2-2026#c4",
+   "evidence_text": "Carried interest is 12.5%"
+  },
+  "checks": [
+   "PASS: TVPI = DPI + RVPI (gap 0.00)",
+   "PASS: called capital <= commitments",
+   "WARN: missing gross_irr_pct"
+  ],
+  "model_version": "offline-rules-v1"
+ },
+ {
+  "doc_id": "corvid-growth-iv-q1-2026",
+  "fund_name": "Corvid Growth Equity Fund IV",
+  "strategy": "Growth Equity",
+  "vintage": 2022,
+  "as_of": "2026-03-31",
+  "currency": "USD",
+  "commitments_m": {
+   "value": 780.0,
+   "unit": "m",
+   "evidence_chunk": "corvid-growth-iv-q1-2026#c0",
+   "evidence_text": "total commitments of $780 million"
+  },
+  "called_m": {
+   "value": 512.0,
+   "unit": "m",
+   "evidence_chunk": "corvid-growth-iv-q1-2026#c0",
+   "evidence_text": "has called $512 million"
+  },
+  "nav_m": {
+   "value": 553.0,
+   "unit": "m",
+   "evidence_chunk": "corvid-growth-iv-q1-2026#c1",
+   "evidence_text": "Net asset value stood at $553 million"
+  },
+  "net_irr_pct": {
+   "value": 6.2,
+   "unit": "%",
+   "evidence_chunk": "corvid-growth-iv-q1-2026#c1",
+   "evidence_text": "net IRR was 6.2%"
+  },
+  "gross_irr_pct": {
+   "value": 11.9,
+   "unit": "%",
+   "evidence_chunk": "corvid-growth-iv-q1-2026#c1",
+   "evidence_text": "gross IRR was 11.9%"
+  },
+  "tvpi_x": {
+   "value": 1.12,
+   "unit": "x",
+   "evidence_chunk": "corvid-growth-iv-q1-2026#c1",
+   "evidence_text": "TVPI was 1.12x"
+  },
+  "dpi_x": {
+   "value": 0.04,
+   "unit": "x",
+   "evidence_chunk": "corvid-growth-iv-q1-2026#c1",
+   "evidence_text": "DPI was 0.04x"
+  },
+  "rvpi_x": {
+   "value": 1.08,
+   "unit": "x",
+   "evidence_chunk": "corvid-growth-iv-q1-2026#c1",
+   "evidence_text": "RVPI was 1.08x"
+  },
+  "mgmt_fee_pct": {
+   "value": 2.0,
+   "unit": "%",
+   "evidence_chunk": "corvid-growth-iv-q1-2026#c4",
+   "evidence_text": "management fee is 2.0%"
+  },
+  "carry_pct": {
+   "value": 20.0,
+   "unit": "%",
+   "evidence_chunk": "corvid-growth-iv-q1-2026#c4",
+   "evidence_text": "Carried interest is 20%"
+  },
+  "checks": [
+   "PASS: TVPI = DPI + RVPI (gap 0.00)",
+   "PASS: called capital <= commitments",
+   "PASS: net IRR <= gross IRR"
+  ],
+  "model_version": "offline-rules-v1"
+ },
+ {
+  "doc_id": "halden-infra-ii-fy2025",
+  "fund_name": "Halden Infrastructure Fund II",
+  "strategy": "Infrastructure",
+  "vintage": 2021,
+  "as_of": "2025-12-31",
+  "currency": "EUR",
+  "commitments_m": {
+   "value": 2400.0,
+   "unit": "m",
+   "evidence_chunk": "halden-infra-ii-fy2025#c0",
+   "evidence_text": "commitments of EUR 2.4 billion"
+  },
+  "called_m": {
+   "value": 1710.0,
+   "unit": "m",
+   "evidence_chunk": "halden-infra-ii-fy2025#c0",
+   "evidence_text": "called capital was EUR 1.71 billion"
+  },
+  "nav_m": {
+   "value": 1810.0,
+   "unit": "m",
+   "evidence_chunk": "halden-infra-ii-fy2025#c1",
+   "evidence_text": "net asset value was EUR 1.81 billion"
+  },
+  "net_irr_pct": {
+   "value": 9.8,
+   "unit": "%",
+   "evidence_chunk": "halden-infra-ii-fy2025#c1",
+   "evidence_text": "net IRR of 9.8%"
+  },
+  "gross_irr_pct": {
+   "value": null,
+   "unit": null,
+   "evidence_chunk": null,
+   "evidence_text": null
+  },
+  "tvpi_x": {
+   "value": 1.24,
+   "unit": "x",
+   "evidence_chunk": "halden-infra-ii-fy2025#c1",
+   "evidence_text": "TVPI was 1.24x"
+  },
+  "dpi_x": {
+   "value": 0.18,
+   "unit": "x",
+   "evidence_chunk": "halden-infra-ii-fy2025#c1",
+   "evidence_text": "DPI was 0.18x"
+  },
+  "rvpi_x": {
+   "value": 1.06,
+   "unit": "x",
+   "evidence_chunk": "halden-infra-ii-fy2025#c1",
+   "evidence_text": "RVPI was 1.06x"
+  },
+  "mgmt_fee_pct": {
+   "value": 1.25,
+   "unit": "%",
+   "evidence_chunk": "halden-infra-ii-fy2025#c4",
+   "evidence_text": "management fee is 1.25%"
+  },
+  "carry_pct": {
+   "value": 15.0,
+   "unit": "%",
+   "evidence_chunk": "halden-infra-ii-fy2025#c4",
+   "evidence_text": "Carried interest is 15%"
+  },
+  "checks": [
+   "PASS: TVPI = DPI + RVPI (gap 0.00)",
+   "PASS: called capital <= commitments",
+   "WARN: missing gross_irr_pct"
+  ],
+  "model_version": "offline-rules-v1"
+ },
+ {
+  "doc_id": "meridian-credit-i-q2-2026",
+  "fund_name": "Meridian Private Credit Fund I",
+  "strategy": "Private Credit",
+  "vintage": 2020,
+  "as_of": "2026-06-30",
+  "currency": "USD",
+  "commitments_m": {
+   "value": 1600.0,
+   "unit": "m",
+   "evidence_chunk": "meridian-credit-i-q2-2026#c0",
+   "evidence_text": "commitments of $1.6 billion"
+  },
+  "called_m": {
+   "value": 1380.0,
+   "unit": "m",
+   "evidence_chunk": "meridian-credit-i-q2-2026#c0",
+   "evidence_text": "had called $1.38 billion"
+  },
+  "nav_m": {
+   "value": 787.0,
+   "unit": "m",
+   "evidence_chunk": "meridian-credit-i-q2-2026#c1",
+   "evidence_text": "Net asset value was $787 million"
+  },
+  "net_irr_pct": {
+   "value": 10.6,
+   "unit": "%",
+   "evidence_chunk": "meridian-credit-i-q2-2026#c1",
+   "evidence_text": "net IRR of 10.6%"
+  },
+  "gross_irr_pct": {
+   "value": null,
+   "unit": null,
+   "evidence_chunk": null,
+   "evidence_text": null
+  },
+  "tvpi_x": {
+   "value": 1.31,
+   "unit": "x",
+   "evidence_chunk": "meridian-credit-i-q2-2026#c1",
+   "evidence_text": "TVPI was 1.31x"
+  },
+  "dpi_x": {
+   "value": 0.74,
+   "unit": "x",
+   "evidence_chunk": "meridian-credit-i-q2-2026#c1",
+   "evidence_text": "DPI was 0.74x"
+  },
+  "rvpi_x": {
+   "value": 0.57,
+   "unit": "x",
+   "evidence_chunk": "meridian-credit-i-q2-2026#c1",
+   "evidence_text": "RVPI was 0.57x"
+  },
+  "mgmt_fee_pct": {
+   "value": 1.0,
+   "unit": "%",
+   "evidence_chunk": "meridian-credit-i-q2-2026#c4",
+   "evidence_text": "management fee is 1.0%"
+  },
+  "carry_pct": {
+   "value": 10.0,
+   "unit": "%",
+   "evidence_chunk": "meridian-credit-i-q2-2026#c4",
+   "evidence_text": "Incentive fee is 10%"
+  },
+  "checks": [
+   "PASS: TVPI = DPI + RVPI (gap 0.00)",
+   "PASS: called capital <= commitments",
+   "WARN: missing gross_irr_pct"
+  ],
+  "model_version": "offline-rules-v1"
+ },
+ {
+  "doc_id": "northvale-iii-q2-2026",
+  "fund_name": "Northvale Capital Partners Fund III",
+  "strategy": "Buyout",
+  "vintage": 2019,
+  "as_of": "2026-06-30",
+  "currency": "USD",
+  "commitments_m": {
+   "value": 1250.0,
+   "unit": "m",
+   "evidence_chunk": "northvale-iii-q2-2026#c0",
+   "evidence_text": "total commitments of $1.25 billion"
+  },
+  "called_m": {
+   "value": 1020.0,
+   "unit": "m",
+   "evidence_chunk": "northvale-iii-q2-2026#c0",
+   "evidence_text": "has called $1.02 billion"
+  },
+  "nav_m": {
+   "value": 958.0,
+   "unit": "m",
+   "evidence_chunk": "northvale-iii-q2-2026#c1",
+   "evidence_text": "Net asset value was $958 million"
+  },
+  "net_irr_pct": {
+   "value": 17.4,
+   "unit": "%",
+   "evidence_chunk": "northvale-iii-q2-2026#c1",
+   "evidence_text": "net IRR of 17.4%"
+  },
+  "gross_irr_pct": {
+   "value": 23.1,
+   "unit": "%",
+   "evidence_chunk": "northvale-iii-q2-2026#c1",
+   "evidence_text": "gross IRR of 23.1%"
+  },
+  "tvpi_x": {
+   "value": 1.86,
+   "unit": "x",
+   "evidence_chunk": "northvale-iii-q2-2026#c1",
+   "evidence_text": "TVPI stood at 1.86x"
+  },
+  "dpi_x": {
+   "value": 0.92,
+   "unit": "x",
+   "evidence_chunk": "northvale-iii-q2-2026#c1",
+   "evidence_text": "DPI of 0.92x"
+  },
+  "rvpi_x": {
+   "value": 0.94,
+   "unit": "x",
+   "evidence_chunk": "northvale-iii-q2-2026#c1",
+   "evidence_text": "RVPI of 0.94x"
+  },
+  "mgmt_fee_pct": {
+   "value": 1.5,
+   "unit": "%",
+   "evidence_chunk": "northvale-iii-q2-2026#c4",
+   "evidence_text": "management fee stepped down from 2.0% of commitments to 1.5%"
+  },
+  "carry_pct": {
+   "value": 20.0,
+   "unit": "%",
+   "evidence_chunk": "northvale-iii-q2-2026#c4",
+   "evidence_text": "Carried interest is 20%"
+  },
+  "checks": [
+   "PASS: TVPI = DPI + RVPI (gap 0.00)",
+   "PASS: called capital <= commitments",
+   "PASS: net IRR <= gross IRR"
+  ],
+  "model_version": "offline-rules-v1"
+ }
+]

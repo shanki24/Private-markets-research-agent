@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Private Markets Research Agent</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📑</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div><strong>Research desk</strong><span>Private markets</span></div>
+    </div>
+    <nav aria-label="Workspaces">
+      <a href="#ask" data-view="ask">Ask the reports</a>
+      <a href="#review" data-view="review">Review extractions <span class="count" id="pending-count"></span></a>
+      <a href="#benchmarks" data-view="benchmarks">Benchmarks</a>
+      <a href="#models" data-view="models">Model registry</a>
+    </nav>
+    <div class="corpus">
+      <p>Indexed reports</p>
+      <ul id="corpus-list"></ul>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ASK -->
+    <section id="view-ask" class="view">
+      <header class="view-head">
+        <h1>Ask the reports</h1>
+        <p>Every figure in an answer links to the passage it came from.</p>
+      </header>
+      <form id="ask-form" class="ask">
+        <label for="q" class="sr">Question</label>
+        <textarea id="q" rows="2" placeholder="e.g. Rank Northvale, Halden and Corvid by DPI"></textarea>
+        <div class="ask-row">
+          <fieldset class="agents">
+            <legend class="sr">Agent</legend>
+            <label><input type="radio" name="agent" value="planner" checked><span>Plan and execute</span></label>
+            <label><input type="radio" name="agent" value="refine"><span>Draft and self-check</span></label>
+            <label><input type="radio" name="agent" value="rag"><span>Single pass</span></label>
+          </fieldset>
+          <label class="offline"><input type="checkbox" id="offline"> Offline baseline</label>
+          <button type="submit" class="primary" id="ask-btn">Ask</button>
+        </div>
+        <div class="examples" id="examples"></div>
+      </form>
+      <div class="desk">
+        <article class="answer-col" id="answer-col">
+          <div class="empty">
+            <p>Ask about returns, fees, portfolio activity or credit quality across the five indexed fund reports. Comparisons across funds are computed from extracted figures, not guessed.</p>
+          </div>
+        </article>
+        <aside class="evidence-col" id="evidence-col" aria-label="Source passages"></aside>
+      </div>
+    </section>
+
+    <!-- REVIEW -->
+    <section id="view-review" class="view" hidden>
+      <header class="view-head">
+        <h1>Review extractions</h1>
+        <p>Nothing reaches the approved dataset until a person signs it off. Failed checks are flagged first.</p>
+      </header>
+      <div class="review-bar">
+        <label>Reviewer <input id="reviewer" placeholder="Your name" autocomplete="name"></label>
+        <button id="rerun-extract" class="ghost">Re-extract all</button>
+        <button id="export-approved" class="ghost">Download approved records</button>
+      </div>
+      <div id="review-list"></div>
+    </section>
+
+    <!-- BENCHMARKS -->
+    <section id="view-benchmarks" class="view" hidden>
+      <header class="view-head">
+        <h1>Benchmarks</h1>
+        <p id="bench-meta"></p>
+      </header>
+      <div id="bench"></div>
+    </section>
+
+    <!-- MODELS -->
+    <section id="view-models" class="view" hidden>
+      <header class="view-head">
+        <h1>Model registry</h1>
+        <p>Every model version and every evaluation run, tied to the dataset hash it was measured on.</p>
+      </header>
+      <div id="models"></div>
+    </section>
+  </main>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>

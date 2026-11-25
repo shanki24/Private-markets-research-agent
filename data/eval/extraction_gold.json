@@ -1,0 +1,7 @@
+{
+ "northvale-iii-q2-2026": {"commitments_m":1250,"called_m":1020,"nav_m":958,"net_irr_pct":17.4,"gross_irr_pct":23.1,"tvpi_x":1.86,"dpi_x":0.92,"rvpi_x":0.94,"mgmt_fee_pct":1.5,"carry_pct":20},
+ "halden-infra-ii-fy2025": {"commitments_m":2400,"called_m":1710,"nav_m":1810,"net_irr_pct":9.8,"gross_irr_pct":null,"tvpi_x":1.24,"dpi_x":0.18,"rvpi_x":1.06,"mgmt_fee_pct":1.25,"carry_pct":15},
+ "corvid-growth-iv-q1-2026": {"commitments_m":780,"called_m":512,"nav_m":553,"net_irr_pct":6.2,"gross_irr_pct":11.9,"tvpi_x":1.12,"dpi_x":0.04,"rvpi_x":1.08,"mgmt_fee_pct":2.0,"carry_pct":20},
+ "meridian-credit-i-q2-2026": {"commitments_m":1600,"called_m":1380,"nav_m":787,"net_irr_pct":10.6,"gross_irr_pct":null,"tvpi_x":1.31,"dpi_x":0.74,"rvpi_x":0.57,"mgmt_fee_pct":1.0,"carry_pct":10},
+ "ashgrove-sec-v-q2-2026": {"commitments_m":3100,"called_m":1940,"nav_m":2110,"net_irr_pct":21.7,"gross_irr_pct":null,"tvpi_x":1.38,"dpi_x":0.29,"rvpi_x":1.09,"mgmt_fee_pct":1.0,"carry_pct":12.5}
+}
